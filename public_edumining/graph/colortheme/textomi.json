@@ -1,0 +1,23 @@
+{
+	"fontcss" : [],
+	"fontfamily" : "Nanum Gothic",
+
+	"trend" : {
+		"background" : ["#7face7", "#ffc0d1", "#9fdce1"],
+		"font" : ["#ffffff", "#585755", "#585755"]
+	},
+	"wordcloud" : {
+		"background" : ["", "", "", ""],
+		"font" : ["#7d99f1", "#aca0dc", "#555", "#999"]
+	},
+	"egonetworks" : {
+		"background" : ["#ddd", "#f2dde2", "#c4d6ee", "#f8c9cd", "#e5c9e0", "#d3d0e8", "#f5c9be", "#f2dbcc", "#dae1f2", "#e2d6ea"],
+		"font" : ["#333", "#333", "#333", "#333", "#333", "#333", "#333", "#333", "#333", "#333"]
+	},
+	"linechart" : ["#9992e8", "#ff8b3f", "#85d9e0", "#ffcc28", "#f18da5", "#99cf60", "#8db7f1", "#d79dde", "#78ceab", "#95d3ff"],
+	"barchart" : ["#9992e8", "#ff8b3f", "#85d9e0", "#ffcc28", "#f18da5", "#99cf60", "#8db7f1", "#d79dde", "#78ceab", "#95d3ff"],
+	"pie" : {
+		"background" : ["#99acfc", "#ed8ca5", "#8bd9df", "#fbce41", "#ee9d89", "#9bd168"],
+		"font" : ["#333", "#333", "#333", "#333", "#333", "#333"]
+	}
+}

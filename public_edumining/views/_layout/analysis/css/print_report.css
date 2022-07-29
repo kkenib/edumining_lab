@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+body {min-width:1000px; font-size: 0.75em; overflow:visible;padding:0;}
+.wrap_cont  {width: 900px; margin:0 !important;}
+
+.print_preview #wrap {display:none;}
+.print_preview #downloadPDFHiddenDiv {position:relative; width:900px !important;height:auto !important;overflow:visible !important;padding:0;margin:auto;left:auto;right:auto;bottom:auto;top:auto;}
+.print_preview .backdrop {display:none;}
+/*
+.print_preview .print_outgrid {display:none;}
+*/
+.print_preview_action {display:none;}
+
+.day_edge {width:900px; margin:auto !important;background-color: #f2f2f2; display: block;height: auto; padding: 10px; box-sizing: border-box;}
+.pagebreak {display:block;page-break-after:always; border-top: 0 !important;}

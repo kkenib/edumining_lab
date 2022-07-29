@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* 기존 layout 숨김
+#header {height:0px;}
+#header {display:none;}
+#gnb {display:none;}
+#content {background:none;padding-top:0;}
+#container {background:none; height: 100%; padding-top:0;}
+#footer {height:0px;}
+#footer {display:none;}
+.footer_wrap {display:none;}
+*/

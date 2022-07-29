@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/*
+[ color ]
+main(navy)
+	bg : #0e123e
+	text : #0e123e
+point(pink)
+	bg : #e84c88
+	text : #e84c88
+line : #ddd, #ccc
+
+text : #888, #666
+*/
+
+
+
+/* ----- S : layout ----- */
+.wrap_pop { min-width: 768px; height: 100%; opacity: 0; overflow: hidden; }
+.wrap_pop.fadein { opacity: 1; transition: ease-in-out 0.5s; }
+.pop_body { height: calc(100% - 64px); background: #fff; padding: 24px; overflow: hidden; overflow-y: auto; }
+
+
+/* layer popup */
+.lpopup { position: absolute; top: 0; left: 0; width: 100%; min-height: 100%; background: rgba(0,0,0,.6); padding: 40px 16px; z-index: 9999; }
+.wrap_lpop { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 736px; border-radius: 16px; box-shadow: 2px 2px 24px 0 rgba(0,0,0,.3) }
+.lpopup .pop_body { border-bottom-left-radius: 16px; border-bottom-right-radius: 16px; }
+.lpopup .tit_pop { border-top-left-radius: 16px; border-top-right-radius: 16px; }
+
+
+/* title */
+.tit_pop { position: relative; line-height: 64px; text-align: center;
+			background-color: #2b469c;
+			background: -webkit-linear-gradient(45deg, #2b469c 10%, #9f58a7 100%); /* For Safari */
+			background: -o-linear-gradient(45deg, #2b469c 10%, #9f58a7 100%); /* For Opera */
+			background: -moz-linear-gradient(45deg, #2b469c 10%, #9f58a7 100%); /* For Firefox */
+			background: linear-gradient(45deg, #2b469c 10%, #9f58a7 100%); /* Standard syntax (must be last) */
+}
+
+.tit_pop h2 { display: inline-block; color: #fff; padding: 0 62px; vertical-align: middle; }
+.tit_pop span { }
+
+/* 부산에듀빅_데이터 관리_데이터 수집 후 미리보기 팝업 타이틀 핑크색상으로 적용 */
+.tit_pop.pink_pop { background: #e84c88; }
+
+
+.btn_pop_close { position: absolute; top: 0; right: 0; color: #fff; padding: 0 24px; opacity: .6; cursor: pointer; }
+.btn_pop_close:hover { opacity: 1; }
+.btn_pop_close i.fa-times { vertical-align: middle; font-size: 20px; }
+
+
+.pop_body .nodata { text-align: center; }
+.pop_body .nodata i { color: #ceccf7; margin-bottom: 12px; font-size: 40px; }
+
+
+
+
+.cont_alert { text-align: center; }
+.cont_alert p { line-height: 26px; }
+
+
+.grey_contbox { padding: 24px; background: #f3f3f5; border: 1px solid #ccc; border-radius:12px; }
+.grey_contbox .wh_box { padding: 16px 24px; background: #fff; border-radius:12px; }
+
+
+
+/* report */
+.brd_detail h3 { color: #0e123e; font-size: 20px; line-height: 28px; }
+.brd_detail h3 i { display: inline-block; margin-right: 8px; padding: 4px 14px; color: #fff; background: #0e123e; border-radius: 40px; line-height: 24px; font-size: 16px; font-family: 'notokr'; font-weight: 400; font-style: normal; }
+.brd_detail .wh_box { min-height: 260px; }
+.brd_detail p a:hover { text-decoration: underline; }
+.brd_detail dl { overflow: hidden; line-height: 40px; }
+.brd_detail dt { float: left; width: 88px; margin-bottom: 8px; color: #0e123e; font-weight: 700; }
+.brd_detail dd { float: left; width: calc(100% - 88px); margin-bottom: 8px; }
+.brd_detail .grapharea { display: block; margin-bottom: 10px; border: 1px solid #ddd; text-align: center; }
+.brd_detail .grapharea h4 { color: #0e123e; padding: 8px 16px; font-weight: 700; text-align: left; line-height: 32px; border-bottom: 1px solid #ddd; }
+.brd_detail .grapharea .wrap_graph { padding: 16px; }
+.brd_detail .box_analtxt { margin-bottom: 10px; padding: 16px; border: 1px solid #ddd; text-align: left; }
+
+
+
+
+
+
+
+/* responsive web */
+
+	/* wide */
+@media screen and (min-width: 1600px) {
+
+}
+
+
+/* ~ Tablet */
+@media screen and (max-width: 1279px){
+
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1023px){
+
+}
+
+
+	/* small Tablet */
+@media screen and (max-width: 768px){
+
+}
+
+	/* small Tablet */
+@media screen and (max-height: 680px){
+
+	.wrap_lpop { top: auto; transform: translateX(-50%); }
+
+}
+

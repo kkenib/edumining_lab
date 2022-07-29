@@ -1,0 +1,65 @@
+.chart-background { opacity: 0;}
+div.tooltip{
+      position: absolute;
+      text-align: center;
+      padding: 5px;
+      font: 12px sans-serif;		
+      background-color: white;
+      border: 1px #b7b7b7 solid;	
+      pointer-events: none;	
+      width: 100px;
+    }
+    .dot {
+      fill: #7ff4a8;
+      stroke: black;
+      stroke-width: 0.4;
+    }
+    .active {
+      fill: blue;
+    }
+    .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10 {
+      fill: #ffb4d9;
+      stroke: black;
+      stroke-width: 0.55;
+	  opacity: 0.4;
+    }
+
+	.dot-label1, .dot-label2, .dot-label3, .dot-label4, .dot-label5, .dot-label6, .dot-label7, .dot-label8, .dot-label9, .dot-label10 {
+	  opacity: 0.7;
+	}
+
+    .axis-label {
+      font-size: 12px; 
+      font-weight: 700;
+    }
+    .title {
+      font-size: 16px; 
+      font-weight: 700;
+    }
+    .sub-title {
+      font-weight: 700;
+    }
+    .grid-line {
+      stroke: black;
+      opacity: 0.45;
+      stroke-dasharray: 1,2;
+    }
+    .xLabel {
+      font-family: 'NanumSquareRound';
+      font-size: 13px;
+	  opacity: .6;
+    }
+    .yLabel {
+      font-family: 'NanumSquareRound';
+      font-size: 13px;
+	  font-weight: 800;
+    }
+	text.ego-label {
+      font-size: 14px;
+	  letter-spacing: 0;
+    }
+    .dot-label {
+      font-weight: 600;
+      text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+	  font-size: 11px;
+    }

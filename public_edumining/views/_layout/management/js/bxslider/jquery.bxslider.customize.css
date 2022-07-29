@@ -1,0 +1,48 @@
+
+.bx-wrapper .bx-prev {left:inherit;}
+.bx-wrapper .bx-next {right:inherit;}
+
+.bx-wrapper .bx-controls-direction,
+.bx-wrapper .bx-controls-auto {position:absolute;text-align:center;}
+
+.bx-wrapper .bx-controls-direction a,
+.bx-wrapper .bx-controls-auto a {position:static; outline:0; display: inline-block; width: 20px; height: 20px; text-indent: -9999px; zoom:1; z-index: 9999; margin: 0 3px;}
+.bx-wrapper .bx-controls-direction a,
+.bx-wrapper .bx-controls-auto a {/*IE7 text-indent hack */ *display:inline; *text-indent:0; *font-size:0; *line-height:0; *overflow:hidden;}
+
+.bx-wrapper .bx-viewport {-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; /* background:#fff */; left: 0px;}
+.bx-wrapper .bx-controls-direction {width:33px;background:#ddd;right:32px;top:-20px;z-index:9997;}
+.bx-wrapper .bx-controls-auto {width:33px !important;right:0px;top:-20px;z-index:9998;}
+.bx-wrapper .bx-has-controls-exp .bx-controls-direction {right:48px;}
+.bx-wrapper .bx-has-controls-exp .bx-controls-auto {width:49px !important;}
+
+.bx-wrapper .bx-controls-direction .bx-prev,
+.bx-wrapper .bx-controls-direction .bx-next,
+.bx-wrapper .bx-controls-auto .bx-start,
+.bx-wrapper .bx-controls-auto .bx-stop,
+.bx-wrapper .bx-controls-auto .bx-list {width:17px; height:17px; margin:0 -1px 0 0;background:url(images/controls2.png) 0 0 no-repeat;}
+
+.bx-wrapper .bx-controls-direction .bx-prev {background-position: 0 0;}
+.bx-wrapper .bx-controls-direction .bx-prev:hover,
+.bx-wrapper .bx-controls-direction .bx-prev.active {background-position: 0 -17px;}
+.bx-wrapper .bx-controls-direction .bx-next {background-position: -16px 0;}
+.bx-wrapper .bx-controls-direction .bx-next:hover,
+.bx-wrapper .bx-controls-direction .bx-next.active {background-position: -16px -17px;}
+.bx-wrapper .bx-controls-auto .bx-start {background-position: -32px 0;}
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {background-position: -32px -17px;}
+.bx-wrapper .bx-controls-auto .bx-stop {background-position: -48px 0;}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {background-position: -48px -17px;}
+.bx-wrapper .bx-controls-auto .bx-list,
+.bx-wrapper .bx-controls-auto .bx-list.active {background-position: -64px 0;}
+.bx-wrapper .bx-controls-auto .bx-list:hover {background-position: -64px -17px;}
+
+/* 목록생성 */
+.bx-listwrap {position:relative; height:0; margin-right:18px; z-index: 9999;}
+.bx-listwrap .bx-listbox {position:absolute; bottom:3px; right:-1px; width:100%; height:auto; min-height:100px; max-height:300px; border:1px solid #d5d5d5; display:none; overflow-x: hidden; overflow-y:auto; background:#fff;}
+.bx-listwrap .bx-listbox .bx-close {position:absolute; top:1px; right:0px; display: block; text-indent: -9999px; width:25px; height:25px; background:url(images/controls2.png) -32px -39px no-repeat;}
+.bx-listwrap .bx-listbox .tit {font-weight:bold; padding:3px 10px; font-size:12px; background:#e5e5e5; color: #333; border-top:1px solid #ddd; border-bottom:2px solid #f4f4f4; height:19px;}
+.bx-listwrap .bx-listbox ul {display:block; float:none; width:auto; margin:0; padding:0;}
+.bx-listwrap .bx-listbox li {display:block; float:none !important; width:auto !important; text-align:left !important; font-weight:normal; font-size:11px; border-bottom:1px solid #eee; padding:5px 3px 2px 12px !important; margin:0px !important; text-overflow:ellipsis;}
+.bx-listwrap .bx-listbox li > em {padding:0 10px 0 0; display:inline-block; *display:inline; *zoom:1; width:20px; text-align:right;}

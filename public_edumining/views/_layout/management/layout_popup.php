@@ -1,0 +1,1 @@
+<?php $this->load->view(element('layout_skin_path', $layout) . '/basic/layout_popup'); ?>

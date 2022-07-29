@@ -1,0 +1,6 @@
+.jspopup_layer {position:absolute; z-index:10000; border:2px solid #000; font-size:12px; overflow:visible; background:#000;}
+.jspopup_wrap {position:static; overflow:auto; line-height:1; background:#fff;line-height:1;}
+.jspopup_wrap .today {position:absolute;left:0; bottom:0; background:#000; height:20px; line-height:150%; padding:2px 5px; color:#fff; overflow:hidden;}
+.jspopup_wrap .today > * {cursor:pointer;}
+.jspopup_wrap .close {position:absolute;right:0;top:0;}
+.jspopup_wrap .close > img {cursor:pointer;}

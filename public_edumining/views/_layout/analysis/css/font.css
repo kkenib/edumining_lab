@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+
+/* Nanum Square
+Light(300)
+Regular(400)
+Bold(700)
+Extra bold(800)
+*/
+@font-face {
+	font-family:'NanumSquare';
+	font-style: light;
+	font-weight: 300;
+		src: url('./font/NanumSquareL.eot');
+		src: url('./font/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+			url('./font/NanumSquareL.woff') format('woff'),
+			url('./font/NanumSquareL.ttf') format('truetype');
+}
+@font-face {
+	font-family:'NanumSquare';
+	font-style: regular;
+	font-weight: 400;
+		src: url('./font/NanumSquareR.eot');
+		src: url('./font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+			url('./font/NanumSquareR.woff') format('woff'),
+			url('./font/NanumSquareR.woff2') format('woff2'),
+			url('./font/NanumSquareR.ttf') format('truetype');
+}
+@font-face {
+	font-family:'NanumSquare';
+	font-style: bold;
+	font-weight: 700;
+		src: url('./font/NanumSquareB.eot');
+		src: url('./font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+			url('./font/NanumSquareB.woff') format('woff'),
+			url('./font/NanumSquareB.woff2') format('woff2'),
+			url('./font/NanumSquareB.ttf') format('truetype');
+}
+@font-face {
+	font-family:'NanumSquare';
+	font-style: extra bold;
+	font-weight: 800;
+		src: url('./font/NanumSquareEB.eot');
+		src: url('./font/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
+			url('./font/NanumSquareEB.woff') format('woff'),
+			url('./font/NanumSquareEB.ttf') format('truetype');
+}
+
+
+/* NotoKR
+Light(300)
+Regular(500)
+medium(600)
+*/
+/* NotoKR */
+@font-face {
+    font-family: 'notokr';
+	font-style: light;
+	font-weight: 300;
+    src: url('./font/notokr-light.eot');
+    src: url('./font/notokr-light.eot?#iefix') format('embedded-opentype'),
+         url('./font/notokr-light.woff2') format('woff2'),
+         url('./font/notokr-light.woff') format('woff'),
+         url('./font/notokr-light.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'notokr';
+	font-style: regular;
+	font-weight: 500;
+    src: url('./font/notokr-regular.eot');
+    src: url('./font/notokr-regular.eot?#iefix') format('embedded-opentype'),
+         url('./font/notokr-regular.woff2') format('woff2'),
+         url('./font/notokr-regular.woff') format('woff'),
+         url('./font/notokr-regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'notokr';
+	font-style: medium;
+	font-weight: 600;
+    src: url('./font/notokr-medium.eot');
+    src: url('./font/notokr-medium.eot?#iefix') format('embedded-opentype'),
+         url('./font/notokr-medium.woff2') format('woff2'),
+         url('./font/notokr-medium.woff') format('woff'),
+         url('./font/notokr-medium.ttf') format('truetype');
+}
+
+
+
+body { font-family: 'notokr', 'NanumSquare', 'dotum', '돋움', 'Tahoma', 'sans-serif'; }
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+button { font-family: 'notokr', 'dotum', '돋움'; }

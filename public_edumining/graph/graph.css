@@ -1,0 +1,123 @@
+@charset "utf-8";
+/**
+ * 일부그래프 커스터마이징이 필요한 경우
+ * datalist 그래프 템플릿
+ * 그래프 영역 안에 들어가는 부분만 독립적으로 작성
+ * 그래프가 들어가는 페이지 및 리포트부분에서 사용
+ * 그래프 마다 고유한 아이디가 있음
+ * 리포트 그래프 템플릿은 graph_helper에 모두 별도 정의해줘야함
+ */
+
+/*_g 는 리포트에서만 사용 */
+._g_bg {}
+._g {/*position:absolute !important; */overflow:hidden; box-sizing:border-box; }
+._g_source {text-align:right}
+._g_text {text-align:left; font-size:12px;}
+
+
+/* 패션시장 규모 그래프 커스텀 스타일 */
+._g_market_1 #graph1_legend > span > span {border-radius:0; margin-right: 5px;}
+._g_market_1 #graph1_legend > span > span > i {display:none;}
+._g_market_1 #graph1_legend > span:first-child > span,
+._g_market_1 #graph1_legend > span:last-child > span {border-radius:10px; margin-right: 10px;}
+._g_market_1 #graph1_legend > span:first-child > span > i, 
+._g_market_1 #graph1_legend > span:last-child > span > i {display:block;}
+._g_market_1 svg .c3-circle {display:block; r : 6; stroke-width:2px; stroke:#ffffff;}
+._g_market_1 svg .c3-chart-lines .c3-line {stroke-width:2px; stroke-linejoin:miter;}
+._g_market_1 svg .c3-text {font-weight:bold; text-shadow:1px 1px 0px #ffffff, -1px 1px 0px #ffffff, 1px -1px 0px #ffffff, -1px -1px 0px #ffffff; }
+._g_market_1 svg .c3-texts-data1 .c3-text {font-weight:bold; fill:#000000 !important;}
+
+/* 마켓 그래프 커스텀 스타일 */
+._g_market_2 #graph1_legend > span {width:200px;}
+._g_market_5 #graph1_legend > span {width:200px;}
+
+._g_market_31 #graph1_legend > span {width:150px;}
+._g_market_31 #graph1_legend > span:nth-child(1),
+._g_market_31 #graph1_legend > span:nth-child(5),
+._g_market_31 #graph1_legend > span:nth-child(6),
+._g_market_31 #graph1_legend > span:nth-child(10) {width:230px;}
+
+._g_market_32 #graph1_legend > span {width:150px;}
+._g_market_32 #graph1_legend > span:nth-child(1),
+._g_market_32 #graph1_legend > span:nth-child(5),
+._g_market_32 #graph1_legend > span:nth-child(6),
+._g_market_32 #graph1_legend > span:nth-child(10) {width:230px;}
+
+._g_market_33 #graph1_legend > span {width:150px;}
+._g_market_33 #graph1_legend > span:nth-child(1),
+._g_market_33 #graph1_legend > span:nth-child(5),
+._g_market_33 #graph1_legend > span:nth-child(6),
+._g_market_33 #graph1_legend > span:nth-child(10) {width:230px;}
+
+/* 트렌드 랭킹 그래프 */
+.ranking {width:100%; /*border: 1px solid #ddd; background:#fff;*/}
+._g.ranking {margin-top:0;}
+.ranking p { margin:0px; display:block; width:100%; height:44px; background-color: #f2f2f2; text-align:center; line-height:44px; font-size:13px;  border-bottom:1px solid #dadada; }
+.ranking_list { display: inline-block; width: 170px; margin: 20px; vertical-align:top; }
+.ranking_list > li { position: relative; line-height: 41px; text-align: left; font-size:13px; border-top: 1px dashed #ddd; }
+.ranking_list > li:first-child { border-top: 0; }
+.ranking_list > li:hover{ color:#f14e75; cursor: default; }
+.ranking_list > li.on1 { color:#f14e75; }
+.ranking_list > li > span{ display:inline-block; width:17px; height:19px;  vertical-align:middle; }
+
+.boxNo1  {background:url('/images/common/monitoring_sprite_test.png') no-repeat 0px -170px; }
+.boxNo2  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -18px -170px;}
+.boxNo3  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -36px -170px;}
+.boxNo4  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -54px -170px;}
+.boxNo5  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -72px -170px;}
+.boxNo6  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -90px -170px;}
+.boxNo7  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -108px -170px;}
+.boxNo8  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -126px -170px;}
+.boxNo9  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -144px -170px;}
+.boxNo10 {background:url('/images/common/monitoring_sprite_test.png') no-repeat -162px -170px;}
+
+.boxNo11  {background:url('/images/common/monitoring_sprite_test.png') no-repeat 0px -211px; }
+.boxNo12  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -18px -211px;}
+.boxNo13  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -36px -211px;}
+.boxNo14  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -54px -211px;}
+.boxNo15  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -72px -211px;}
+.boxNo16  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -90px -211px;}
+.boxNo17  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -108px -211px;}
+.boxNo18  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -126px -211px;}
+.boxNo19  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -144px -211px;}
+.boxNo20 {background:url('/images/common/monitoring_sprite_test.png') no-repeat -162px -211px;}
+
+.boxNo21  {background:url('/images/common/monitoring_sprite_test.png') no-repeat 0px -229px; }
+.boxNo22  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -18px -229px;}
+.boxNo23  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -36px -229px;}
+.boxNo24  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -54px -229px;}
+.boxNo25  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -72px -229px;}
+.boxNo26  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -90px -229px;}
+.boxNo27  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -108px -229px;}
+.boxNo28  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -126px -229px;}
+.boxNo29  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -144px -229px;}
+.boxNo30 {background:url('/images/common/monitoring_sprite_test.png') no-repeat -162px -229px;}
+
+.boxNo31  {background:url('/images/common/monitoring_sprite_test.png') no-repeat 0px -247px; }
+.boxNo32  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -18px -247px;}
+.boxNo33  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -36px -247px;}
+.boxNo34  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -54px -247px;}
+.boxNo35  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -72px -247px;}
+.boxNo36  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -90px -247px;}
+.boxNo37  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -108px -247px;}
+.boxNo38  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -126px -247px;}
+.boxNo39  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -144px -247px;}
+.boxNo40 {background:url('/images/common/monitoring_sprite_test.png') no-repeat -162px -247px;}
+
+.boxNo41  {background:url('/images/common/monitoring_sprite_test.png') no-repeat 0px -265px; }
+.boxNo42  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -18px -265px;}
+.boxNo43  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -36px -265px;}
+.boxNo44  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -54px -265px;}
+.boxNo45  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -72px -265px;}
+.boxNo46  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -90px -265px;}
+.boxNo47  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -108px -265px;}
+.boxNo48  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -126px -265px;}
+.boxNo49  {background:url('/images/common/monitoring_sprite_test.png') no-repeat -144px -265px;}
+.boxNo50 {background:url('/images/common/monitoring_sprite_test.png') no-repeat -162px -265px;}
+
+.rank_up,
+.rank_down,
+.rank_new { position:absolute; right:5px; top:15px; width:13px !important; height:15px !important; padding-left:15px; line-height:13px; text-align:right; margin-right: 5px; font-style: normal; }
+.rank_up { background:url('/images/common/icon.png') no-repeat 0px -867px;  }
+.rank_down { background:url('/images/common/icon.png') no-repeat -51px -867px; }
+.rank_new { background:url('/images/common/icon.png') no-repeat 0px -852px; }

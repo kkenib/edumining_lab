@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+[ color ]
+main(navy)
+	bg : #0e123e
+	text : #0e123e
+point(pink)
+	bg : #e84c88
+	text : #e84c88
+line : #ddd, #ccc
+
+text : #888, #666
+*/
+
+
+
+/* ----- S : layout ----- */
+.wrap_pop { min-width: 280px; height: 100%; opacity: 0; overflow: hidden; }
+.wrap_pop.fadein { opacity: 1; transition: ease-in-out 0.5s; }
+.pop_body { height: calc(100% - 64px); background: #f4f4f4; padding: 24px; overflow: hidden; overflow-y: auto; border-bottom-left-radius: 16px; border-bottom-right-radius: 16px; }
+.pop_body.bg_white { background: #fff; }
+
+
+/* layer popup */
+.lpopup { position: absolute; top: 0; left: 0; width: 100%; min-height: 100%; background: rgba(0,0,0,.6); padding: 40px 16px; z-index: 9999; }
+.wrap_lpop { position: relative; left: 50%; transform: translateX(-50%); width: 100%; max-width: 846px; border-radius: 16px; box-shadow: 2px 2px 24px 0 rgba(0,0,0,.3) }
+
+
+/* title */
+.tit_pop { position: relative; background: #483788; line-height: 64px; text-align: center; border-top-left-radius: 16px; border-top-right-radius: 16px; }
+.tit_pop h2 { display: inline-block; color: #fff; vertical-align: middle; }
+.tit_pop span { }
+
+/* 부산에듀빅_데이터 관리_데이터 수집 후 미리보기 팝업 타이틀 핑크색상으로 적용 */
+.tit_pop.pink_pop { background: #e84c88; }
+
+
+
+.btn_pop_close { position: absolute; top: 0; right: 0; color: #fff; padding: 0 24px; opacity: .6; cursor: pointer; }
+.btn_pop_close:hover { opacity: 1; }
+.btn_pop_close i.fa-times { vertical-align: middle; font-size: 20px; }
+
+
+.pop_body .nodata { text-align: center; }
+.pop_body .nodata i { color: #ceccf7; margin-bottom: 12px; font-size: 40px; }
+
+
+
+
+
+/* responsive web */
+
+	/* wide */
+@media screen and (min-width: 1600px) {
+
+}
+
+
+/* ~ Tablet */
+@media screen and (max-width: 1279px){
+
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1023px){
+
+}
+
+
+	/* small Tablet */
+@media screen and (max-width: 768px){
+
+	.wrap_lpop { top: auto; left: auto; transform: none; }
+
+}
+
+
+
+	/* mobile */
+@media screen and (max-width: 480px) {
+}

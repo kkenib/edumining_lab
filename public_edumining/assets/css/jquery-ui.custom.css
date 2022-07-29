@@ -1,0 +1,40 @@
+.ui-widget,
+.ui-widget input,
+.ui-widget textarea,
+.ui-widget select {
+
+}
+.ui-widget.ui-datepicker .ui-datepicker-title select {
+	height: 28px;
+}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year {
+	width: auto; 
+	height:25px; 
+	font-size:14px; 
+	font-weight:normal;
+}
+.ui-widget .ui-state-week-active {
+    border: 1px solid #79b7e7;
+    background: #d0e5f5;
+    font-weight: bold;
+    color: #1d5987;
+}
+.ui-widget .ui-state-week-hover {
+    border: 1px solid #79b7e7;
+    background: #f5f8f9;
+    font-weight: bold;
+    color: #1d5987;
+}
+.ui-widget .ui-datepicker-other-month > span {
+	font-weight:normal;
+}
+.ui-widget-shadow {
+	border-radius: 3px;
+}
+.ui-widget-overlay {
+	background: #a6a6a6;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-lastday {
+    float: left;
+}

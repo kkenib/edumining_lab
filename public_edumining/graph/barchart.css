@@ -1,0 +1,47 @@
+.c3 svg {font-size: 12px;}
+
+.bc_sty1 .c3 svg * {font-family:"Dotum";}
+.bc_sty1 .c3 svg .c3-empty {fill:#d0d0d0; font-family:"Helvetica";}
+.bc_sty1 .c3 svg .c3-legend-item-hidden { opacity: .5; }
+
+.bc_sty1 .c3-custom-legend {text-align:left; font-size:12px; box-sizing: border-box !important; padding:8px 10px 13px 10px; border:1px solid #e0e0e0;}
+.bc_sty1 .c3-custom-legend > span {margin-left:20px; position:relative; display:inline-block; cursor:pointer; text-align:left; line-height:22px; font-weight: 900; font-size: 13px;}
+.bc_sty1 .c3-custom-legend > span > span { display:block; width:10px; height:10px; border-radius:6px; float:left; margin-left: 5px; margin-top:5px; margin-right:10px;}
+.bc_sty1 .c3-custom-legend > span > span > i {display:block; width:18px; height:2px; margin-left:-4px; margin-top:4px;}
+.bc_sty1 .c3-custom-legend .c3-legend-item-hidden { opacity: .5; }
+
+/* trend */
+.bc_sty1 svg .c3-wrap-1 .tick > line { visibility: hidden; }
+.bc_sty1 svg .c3-axis { font-size:11px; }
+.bc_sty1 svg .c3-axis .domain { stroke: #888888; }
+.bc_sty1 svg .c3-axis .tick > text > tspan { font-size:11px; fill:#6c6c6c; }
+.bc_sty1 svg .c3-axis-x .tick > text { }
+.bc_sty1 svg .c3-axis-x .tick > line {stroke: #888888;}
+.bc_sty1 svg .c3-axis-y .tick > line,
+.bc_sty1 svg .c3-axis-y2 .tick > line { display:none; }
+.bc_sty1 svg .c3-axis-x-label,
+.bc_sty1 svg .c3-axis-y-label,
+.bc_sty1 svg .c3-axis-y2-label { fill:#6c6c6c; }
+.bc_sty1 svg .c3-chart-texts .c3-text {font-size:11px;}
+.bc_sty1 svg .c3-legend-background {stroke:none;}
+.bc_sty1 svg .c3-legend-item * { font-size:12px; fill:#6c6c6c; }
+.bc_sty1 svg .c3-xgrid,
+.bc_sty1 svg .c3-ygrid { stroke-dasharray: none; stroke:#e0e0e0; }
+.bc_sty1 svg .c3-xgrid-focus .c3-xgrid-focus {stroke:#fabccb;}
+
+.bc_sty1 svg .grid-average > line {stroke:#ff0000; stroke-dasharray: 4,4;}
+.bc_sty1 svg .grid-average > text {fill:#ff0000; font-size:11px;}
+.bc_sty1 svg .underline {margin-top:-1px; stroke: #888888; stroke-width:2px; stroke-linejoin:miter; shape-rendering: crispEdges; stroke-alignment: inner;}
+
+.bc_sty1 .c3-tooltip-container {}
+.bc_sty1 .c3-tooltip-wrap {position:relative;border: 1px solid #aeacad; border-radius:5px; padding:10px; background:#fff; top:0px; margin-top:-20%;}
+.bc_sty1 .c3-tooltip,
+.bc_sty1 .c3-tooltip tr {border:0px; background:#fff; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
+.bc_sty1 .c3-tooltip th,
+.bc_sty1 .c3-tooltip td {border:0px; background:#fff; color: #6c6c6c; padding: 5px;}
+.bc_sty1 .c3-tooltip td > span { border-radius: 5px; }
+.bc_sty1 .c3-tooltip td.name { text-align:left; }
+.bc_sty1 .c3-tooltip-caret {position:absolute; margin-left:-16px; margin-top:-6px; top:50%;
+	display:block; width:10px; height:10px; border:1px solid transparent; border-color:#aeacad #aeacad transparent transparent; background-color: #ffffff;
+	transform:rotate(225deg); -ms-transform:rotate(225deg); -webkit-transform:rotate(225deg); -moz-transform:rotate(225deg); -o-transform:rotate(225deg);
+}
